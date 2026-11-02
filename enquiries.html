@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiries | Love from Above NPO</title>
+  <meta name="description" content="Ask Love from Above NPO about volunteering, donations, sponsorships and community partnerships in Johannesburg.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="page-enquiries">
+  <header class="site-header">
+    <div class="header-container">
+      <div class="site-branding">
+        <a href="index.html">
+          <img src="images/love-from-above-logo.jpg" alt="Love from Above NPO Logo" width="120" height="90" class="logo">
+        </a>
+        <h1 class="page-title">Enquiries</h1>
+      </div>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="enquiries.html" class="active" aria-current="page">Enquiries</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="enquiry-section card-box">
+        <h2>Submit Your Enquiry</h2>
+        <p class="section-intro">Have a question about our programs or partnerships? Fill out the form below and our team will get back to you.</p>
+
+        <form class="site-form" id="enquiry-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="069 118 1425"></div>
+
+          <div class="form-group">
+            <label for="enquiry-type">Enquiry Type:</label>
+            <select id="enquiry-type" name="enquiry-type" class="form-control" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="general">General Questions</option>
+              <option value="volunteering">Volunteering Opportunities</option>
+              <option value="donations">Donations & Sponsorships</option>
+              <option value="partnerships">Community Partnerships</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred Date (optional):</label>
+            <input type="date" id="date" name="date"></div>
+
+          <div class="form-group">
+            <label for="enquiry">Your Enquiry:</label>
+            <textarea id="enquiry" name="enquiry" rows="5" placeholder="Please detail your enquiry here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+        </form>
+        <div id="form-result" class="form-result" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="faq card-box">
+        <h2>Frequently Asked Questions</h2>
+        <button class="accordion-btn" aria-expanded="false">Can I volunteer?</button>
+        <div class="accordion-panel" hidden><p>Yes. Choose Volunteering Opportunities in the form above and we will contact you.</p></div>
+        <button class="accordion-btn" aria-expanded="false">How can I donate or sponsor?</button>
+        <div class="accordion-panel" hidden><p>Choose Donations &amp; Sponsorships in the form above or email donate@lovefromabove.co.za.</p></div>
+        <button class="accordion-btn" aria-expanded="false">Where are you based?</button>
+        <div class="accordion-panel" hidden><p>23 Vivienne St, Chrisville, Johannesburg. See the Contact Us page for a map.</p></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Love from Above (NPO). All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

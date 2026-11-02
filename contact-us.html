@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Love from Above NPO</title>
+  <meta name="description" content="Contact Love from Above NPO in Johannesburg. Find our location and phone number, or send a message about donations, sponsorship or volunteering.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="page-contact">
+  <header>
+    <div class="site-branding">
+      <img src="images/love-from-above-logo.jpg" alt="Love from Above NPO Logo" width="120" height="90" class="logo">
+      <h1>Contact Us</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="contact-us.html" class="active">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="enquiries.html">Enquiries</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="contact-grid">
+        <section class="contact-location">
+          <h2>Our Location</h2>
+          <div class="map-embed"><div id="map" role="region" aria-label="Map showing our location"></div></div>
+          <p>23 Vivienne St, Chrisville, Johannesburg, 2091, South Africa</p>
+        </section>
+
+        <section class="contact-form-section">
+          <h2>Send Us a Message</h2>
+          <form class="site-form" id="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="069 118 1425"></div>
+
+          <div class="form-group">
+              <label for="message-type">Message Type:</label>
+              <select id="message-type" name="message-type"><option value="">Select an option</option><option>General message</option><option>Donation or sponsorship</option><option>Volunteering</option></select></div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send</button>
+          </form>
+        <div id="form-result" class="form-result" role="status" aria-live="polite"></div>
+        </section>
+      </div>
+
+      <section class="social-links">
+        <h2>Connect with Us</h2>
+        <ul class="social-icons">
+          <li><a href="#" aria-label="Facebook">Facebook : Love From Above NPO</a></li>
+          <li><a href="#" aria-label="mobile">Mobile : 069 118 1425</a></li>
+          <li><a href="#" aria-label="Instagram">instagram : @love_from_above_npo</a></li>
+         <h3>for sponsorship and donations</h3>
+          <li><a href="#" aria-label="Email">Email : donate@lovefromabove.co.za</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright reserved. Web dev. 2026</p>
+  </footer>
+</body>
+</html>
